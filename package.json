@@ -1,0 +1,25 @@
+
+---
+
+### **2. `package.json`**
+
+```json
+{
+  "name": "node-task-api",
+  "version": "1.0.0",
+  "description": "Node.js API with user task queuing and rate limiting using Redis.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "cluster": "pm2 start server.js -i 2 --name 'task-api-cluster'",
+    "test": "echo 'Test suite not implemented'"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "redis": "^4.6.7"
+  },
+  "devDependencies": {},
+  "keywords": ["nodejs", "api", "rate-limiting", "redis", "pm2"],
+  "author": "Your Name",
+  "license": "MIT"
+}
